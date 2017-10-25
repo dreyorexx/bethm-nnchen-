@@ -11,6 +11,7 @@ export default class Header extends Component {
 
     return (
       <Menu>
+
         <Menu.Item
           name='Home'
           active={activeItem === 'Home'}
