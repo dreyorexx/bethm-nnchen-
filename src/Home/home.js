@@ -1,26 +1,13 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react'
+import { Button } from 'semantic-ui-react'
 
-export default class Home extends Component {
-    render() {
-        return (
-            <Carousel>
-                <div>
-                    <img src="assets/1.jpeg" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="assets/2.jpeg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
-        );
-    }
-};
+import Header from '../Header/header';
 
-ReactDOM.render(<Home />, document.querySelector('.home'));
+const ButtonExampleEmphasis = () => (
+  <div>
+    <Button primary>Primary</Button>
+    <Button secondary>Secondary</Button>
+  </div>
+)
+
+export default ButtonExampleEmphasis
