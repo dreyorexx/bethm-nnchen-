@@ -1,0 +1,68 @@
+.form{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    position:fixed;
+    height:100%;
+    background-color: black;
+    width: 50%;
+    top: 0;
+    left: 0;
+}
+
+.contactHead {
+  padding-top: 20px;
+  padding-left: 20%;
+  font-family: Stencil;
+}
+
+.h3 {
+  padding-left: 8%;
+  padding-bottom: 10px;
+}
+
+.contactForm {
+  padding-left: 10%;
+}
+
+.nameBox, .emailBox, .subBox {
+  margin-bottom: 10px;
+
+}
+
+#name, #email, #subject{
+  width: 85%;
+  height: 30px;
+  font-size: 20px;
+  font-family: Rockwell;
+  border-radius: 10px;
+}
+
+#msg {
+  text-align: left;
+  font-size: 16px;
+  font-family: Rockwell;
+  border-radius: 10px;
+  resize:none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 18px;
+  font-family: Rockwell;
+  padding-left: 10px;
+}
+
+#send {
+  margin-left: 65%;
+  margin-top: 10px;
+  background-color: orange;
+  border: none;
+  padding: 5px 10px 5px 10px;
+
+}
+
+#cancel {
+  margin-left: 4%;
+  margin-top: 10px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+}

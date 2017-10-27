@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
 
-class App extends Component {
+import 'semantic-ui-css/semantic.min.css';
+
+
+import Header from './Header/header';
+import Home from './Home/home';
+import ContactUs from './ContactUs/contact-us';
+import Test from './Test/test';
+
+export default class App extends Component {
+  constructor() {
+    super();
+    //this.state({});
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <div className="Contents">
+            <Switch>
+              <Route exact path="/" component={Header} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/test" component={Test} />
+              <Route exact path="/contact-us" component={ContactUs} />
+
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
-
-export default App;
