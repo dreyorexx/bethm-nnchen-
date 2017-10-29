@@ -6,7 +6,6 @@ import './contact-us.css';
 export default class ContactUs extends React.Component {
   render() {
     return (
-
       <div className="wrapper">
         <div className="left">
           <h1 id="h1">Get in touch with us</h1>
@@ -34,7 +33,6 @@ export default class ContactUs extends React.Component {
 
         <div className="right">
           <h1>Contact Info</h1>
-
         </div>
       </div>
       );

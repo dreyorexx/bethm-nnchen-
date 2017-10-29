@@ -7,7 +7,7 @@ export default class Test extends React.Component {
   render() {
     return (
         <div class="flex-container">
-          
+
         </div>
     );
   }
