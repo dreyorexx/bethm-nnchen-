@@ -21,9 +21,8 @@ export default class App extends Component {
           <div className="Contents">
             <Switch>
               <Route exact path="/" component={Header} />
-              <Route exact path="/test" component={Test} />
               <Route exact path="/contact-us" component={ContactUs} />
-
+              <Route exact path="/test" component={Test} />
             </Switch>
           </div>
         </div>
