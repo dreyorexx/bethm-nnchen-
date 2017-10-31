@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Dropdown, Icon, Menu, Button } from 'semantic-ui-react'
+import { Dropdown, Icon, Menu, Button, Sticky } from 'semantic-ui-react'
 
 export default class Header extends Component {
 
@@ -30,10 +30,7 @@ export default class Header extends Component {
             <Dropdown.Menu>
 
                 <Dropdown.Item>Sign Up</Dropdown.Item>
-                <Dropdown.Item>
-                Login
-
-                </Dropdown.Item>
+                <Dropdown.Item>Login  </Dropdown.Item>
 
 
               </Dropdown.Menu>
