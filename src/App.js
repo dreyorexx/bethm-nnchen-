@@ -5,8 +5,11 @@ import 'semantic-ui-css/semantic.min.css';
 
 
 import Header from './Header/header';
+import ContactTest from './ContactTest/contactTest';
 import ContactUs from './ContactUs/contact-us';
+import Dashboard from './Dashboard/dashboard';
 import Test from './Test/test';
+
 
 export default class App extends Component {
   constructor() {
@@ -21,7 +24,9 @@ export default class App extends Component {
           <div className="Contents">
             <Switch>
               <Route exact path="/" component={Header} />
+              <Route exact path="/contactTest" component={ContactTest} />
               <Route exact path="/contact-us" component={ContactUs} />
+              <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/test" component={Test} />
             </Switch>
           </div>

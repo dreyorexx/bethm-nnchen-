@@ -1,0 +1,125 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+  background-color: #1B1C1D;
+  padding-bottom: 1%;
+}
+
+#contactHeader {
+  padding-left: 45%;
+  padding-top: 2%;
+  font-family: Stencil;
+  color: #e8e8e8;
+}
+
+#contactSubHeader {
+  padding-left: 35%;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-family: Helvetica, sans-serif;
+  color: #d1d1d1;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#leftHeader {
+  padding-left: 22%;
+  padding-top: 5%;
+  font-size: 1.4em;
+  font-family: helvetica;
+  color: #313233;
+}
+
+.leftCol {
+  height: 100%;
+  width: 100%;
+  min-height: 470px;
+  background-color:#aab4b2;
+}
+
+#contactForm {
+  margin-top: 3%;
+}
+
+#nameField {
+  width: 100%;
+  padding-left: 22%;
+  padding-bottom: 2%;
+}
+
+#nameInput {
+  width: 75%;
+}
+
+#emailField {
+  width: 100%;
+  padding-left: 22%;
+  padding-bottom: 2%;
+}
+
+#emailInput {
+  width: 75%;
+}
+
+#msgField {
+  width:100%;
+  padding-left: 22%;
+  padding-bottom: 2%;
+}
+
+#msgInput {
+  width:75%;
+  resize: none;
+}
+
+#sendBtn {
+  margin-left: 22%;
+}
+
+.rightCol {
+  height: 100%;
+  width: 100%;
+  min-height: 470px;
+  background-color: #aab4b2;
+}
+
+#rightHeader {
+  padding-left: 30%;
+  padding-top: 5%;
+  font-size: 1.4em;
+  font-family: helvetica;
+  color: #313233;
+}
+
+.phoneNo {
+  margin-top: 5%;
+  padding-left: 24%;
+}
+
+#phone {
+  display: inline;
+  padding-left: 50px;
+  font-size: 0.8em;
+  color: #313233;
+}
+
+.emailAddr {
+  margin-top: 4%;
+  padding-left: 24%;
+}
+
+#mail {
+  display: inline;
+  padding-left: 50px;
+  font-size: 0.8em;
+}

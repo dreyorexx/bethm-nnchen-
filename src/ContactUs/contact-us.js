@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './contact-us.css';
+import { Icon } from 'semantic-ui-react'
+
 
 
 export default class ContactUs extends React.Component {
   render() {
     return (
+
       <div className="wrapper">
         <div className="left">
           <h1 id="h1">Get in touch with us</h1>
-          <h3 id="h3">Send us your enqueries. We will get back to you within 24 hours.</h3>
+          <h3 id="h3">Leave us a message. We will get back to you within 24 hours.</h3>
 
           <form className="contactForm">
             <div className="nameBox">
@@ -26,13 +29,27 @@ export default class ContactUs extends React.Component {
             </div>
             <div className="button">
               <button id="send" type="submit">Send</button>
-              <button id="cancel" type="cancel">Cancel</button>
             </div>
           </form>
         </div>
 
         <div className="right">
-          <h1>Contact Info</h1>
+          <h1 id="contactInfo">Contact Info</h1>
+
+          <div className="email">
+            <h4 id="eh4">
+              <i class="mail icon" id="mailIcon"/>
+              <a href="http://www.google.com" id="emailAddr">info@strat.com</a>
+            </h4>
+          </div>
+
+          <div className="phone">
+            <h4 id="ph4">
+              <i class="call icon" id="callIcon"/>
+              (+65)91234567
+            </h4>
+          </div>
+
         </div>
       </div>
       );
