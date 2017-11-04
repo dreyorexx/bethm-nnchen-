@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './contactTest.css';
-import { Icon, Grid, Form } from 'semantic-ui-react'
+import { Icon, Grid, Form } from 'semantic-ui-react';
 
 
 export default class ContactTest extends React.Component {

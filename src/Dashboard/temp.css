@@ -1,0 +1,50 @@
+.sidebar {
+
+}
+
+
+.dashboardContainer {
+  padding: 0px 0px 0px 0px;
+  background-color: grey;
+  width: 100%;
+}
+
+#headerDash {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.currentProgressContainer {
+  width: 100%;
+}
+
+#gridContainer {
+  margin-top: 0%;
+  padding-top: 0px;
+  background-color: green;
+
+}
+
+#box1 {
+  background-color: pink;
+  width: 100%;
+  padding-left: 2%;
+  margin-top: 0%;
+  margin-left: 0%;
+
+}
+
+#currentTutHeader {
+  padding-top: 3%;
+  padding-bottom: 0.5%;
+  margin-left: 0px;
+  font-size: 1.3em;
+}
+
+#currentProgress {
+  width: 92%;
+}
+
+#contTut {
+  float: right;
+}
