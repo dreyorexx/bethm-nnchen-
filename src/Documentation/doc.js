@@ -4,9 +4,9 @@ import {Button, Container, Divider, Form,Input, TextArea, Grid, Header, Icon, Im
 const FixedMenu = () => (
   <Menu fixed='top' size='large'>
     <Container>
-      <Menu.Item as='a' active><a href="/Header">Dashboard</a></Menu.Item>
+      <Menu.Item as='a'><a href="/Header">Dashboard</a></Menu.Item>
       <Menu.Item as='a'><a href="/Tutorial">Tutorial</a></Menu.Item>
-      <Menu.Item as='a' ><a href="/Doc">Documentation</a></Menu.Item>
+      <Menu.Item as='a' active><a href="/Doc">Documentation</a></Menu.Item>
 
       <Menu.Menu position='right'>
           <Dropdown item text='Drey'>
@@ -19,12 +19,6 @@ const FixedMenu = () => (
     </Container>
   </Menu>
 )
-
-const options = [
-  { key: 'edit', icon: 'edit', text: 'Edit Post', value: 'edit' },
-  { key: 'delete', icon: 'delete', text: 'Remove Post', value: 'delete' },
-  { key: 'hide', icon: 'hide', text: 'Hide Post', value: 'hide' },
-]
 
 export default class HomepageLayout extends Component {
   state = {}
@@ -62,26 +56,22 @@ export default class HomepageLayout extends Component {
               >
                 <Container>
                   <Menu inverted pointing secondary size='large'>
-                    <Menu.Item as='a' active><a href="/Tutorial">Dashboard</a></Menu.Item>
+                    <Menu.Item as='a'><a href="/Tutorial">Dashboard</a></Menu.Item>
                     <Menu.Item as='a'><a href="/Tutorial">Tutorial</a></Menu.Item>
-                    <Menu.Item as='a' ><a href="/Tutorial">Documentation</a></Menu.Item>
+                    <Menu.Item as='a' active><a href="/Tutorial">Documentation</a></Menu.Item>
 
                       <Menu.Menu position='right'>
                           <Dropdown item text='Drey'>
-                            <Dropdown.Menu options={options}>
+                            <Dropdown.Menu>
                               <Dropdown.Item>Profile</Dropdown.Item>
                               <Dropdown.Item>Log Out</Dropdown.Item>
                             </Dropdown.Menu>
                           </Dropdown>
-                      </Menu.Menu>
-
-
+                        </Menu.Menu>
                   </Menu>
                 </Container>
               </Segment>
             </Visibility>
-
-
 
                 <Segment inverted vertical style={{ padding: '5em 0em' }}>
                   <Container>

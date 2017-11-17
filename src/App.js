@@ -5,7 +5,8 @@ import 'semantic-ui-css/semantic.min.css';
 
 import Header from './Header/header';
 import Home from './Home/home';
-
+import Tutorial from './Tutorial';
+import Documentation from './Documentation/doc';
 class App extends Component {
   constructor() {
     super();
@@ -20,6 +21,8 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/Header" component={Header} />
+              <Route exact path="/Tutorial" component={Tutorial} />
+              <Route exact path="/Doc" component={Documentation} />
             </Switch>
           </div>
         </div>
