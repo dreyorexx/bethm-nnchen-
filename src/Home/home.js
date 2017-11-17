@@ -5,7 +5,9 @@ const FixedMenu = () => (
   <Menu fixed='top' size='large'>
     <Container>
       <Menu.Item as='a' active>Home</Menu.Item>
-      <Menu.Item as='a'>Contact Us</Menu.Item>
+      <Menu.Item as='a'>News</Menu.Item>
+      <Menu.Item as='a'>Community Forum</Menu.Item>
+      <Menu.Item as='a'>Documentation</Menu.Item>
 
       <Menu.Menu position='right'>
         <Menu.Item className='item'>
@@ -32,6 +34,11 @@ export default class HomepageLayout extends Component {
 
   handleClose = () => this.setState({ modalOpen: false })
 
+  handleClick = (e) => {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  };
+
   render() {
     const { visible } = this.state
 
@@ -51,11 +58,16 @@ export default class HomepageLayout extends Component {
             vertical
           >
             <Container>
+
+
               <Menu inverted pointing secondary size='large'>
                 <Menu.Item as='a' active>Home</Menu.Item>
-                <Menu.Item as='a'>Contact Us</Menu.Item>
+                <Menu.Item as='a'>News</Menu.Item>
+                <Menu.Item as='a'>Community Forum</Menu.Item>
+                <Menu.Item as='a'>Documentation</Menu.Item>
+
                 <Menu.Item position='right'>
-                  <Button as='a' inverted>Log in</Button>
+                  <Button as='a' inverted><a href="/Header">Log in</a></Button>
                   <Button as='a' inverted style={{ marginLeft: '0.5em' }}>Sign Up</Button>
                 </Menu.Item>
               </Menu>
@@ -124,6 +136,7 @@ export default class HomepageLayout extends Component {
                         <Form.Field id='form-textarea-control-opinion' control={TextArea} label='Opinion' placeholder='Opinion' />
                       </Form>
                     </Modal.Content>
+
                     <Modal.Actions>
                       <Button color='red' onClick={this.handleClose} inverted>
                         <Icon name='remove' /> Cancel
