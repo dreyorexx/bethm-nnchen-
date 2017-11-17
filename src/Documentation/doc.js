@@ -56,9 +56,9 @@ export default class HomepageLayout extends Component {
               >
                 <Container>
                   <Menu inverted pointing secondary size='large'>
-                    <Menu.Item as='a'><a href="/Tutorial">Dashboard</a></Menu.Item>
+                    <Menu.Item as='a'><a href="/Header">Dashboard</a></Menu.Item>
                     <Menu.Item as='a'><a href="/Tutorial">Tutorial</a></Menu.Item>
-                    <Menu.Item as='a' active><a href="/Tutorial">Documentation</a></Menu.Item>
+                    <Menu.Item as='a' active><a href="/Doc">Documentation</a></Menu.Item>
 
                       <Menu.Menu position='right'>
                           <Dropdown item text='Drey'>
