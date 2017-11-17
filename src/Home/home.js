@@ -10,4 +10,4 @@ const ButtonExampleEmphasis = () => (
   </div>
 )
 
-export default ButtonExampleEmphasis
+export default ButtonExampleEmphasis;

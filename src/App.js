@@ -9,6 +9,7 @@ import ContactTest from './ContactTest/contactTest';
 import ContactUs from './ContactUs/contact-us';
 import Dashboard from './Dashboard/dashboard';
 import Test from './Test/test';
+import InteractiveTut from './InteractiveTut/interactiveTut';
 
 
 export default class App extends Component {
@@ -28,6 +29,7 @@ export default class App extends Component {
               <Route exact path="/contact-us" component={ContactUs} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/test" component={Test} />
+              <Route exact path="/interactiveTut" component={InteractiveTut} />
             </Switch>
           </div>
         </div>

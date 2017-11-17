@@ -1,51 +1,91 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './dashboard.css';
 
-      <div className="sidebar">
-        <div class="ui visible sidebar inverted vertical menu">
-          <a class="item">
-            Dashboard
-          </a>
-          <a class="item">
-            Interactive Tutorials
-          </a>
-          <a class="item">
-            Help
-          </a>
-        </div>
+import { Sidebar, Grid, Progress } from 'semantic-ui-react';
+import $ from 'jquery';
+import { findDOMNode } from 'react-dom';
 
+export default class Dashboard extends React.Component {
 
-        <div className="dashboardContainer">
-          <div className="dashboardHeader">
-            <h1 id="headerDash">Dashboard</h1>
-          </div>
+  handleToggle = () => {
+    const t = findDOMNode(this.refs.toggle);
+    $('.ui.sidebar').sidebar('toggle');
+  }
 
-          <div className="currentProgressContainer">
-            <div class="ui grid container" id="gridContainer">
-              <div class="one column row">
-                  <div class="column" id="box1">
-                    <h4 id="currentTutHeader">My Current Tutorial:</h4>
+  render() {
+    return (
 
-                    <div class="ui progress"  id="currentProgress">
-                      <div class="bar">
-                        <div class="progress">0%</div>
-                      </div>
-                    </div>
+      <div>
+          <div class="ui grid container" id="grid">
+            <div class="row">
+              <div class="three wide column" id="sidebarCol">
 
-                    <div id="contLink">
-                      <p><a href="#" id="contTut">Continue tutorial</a></p>
-                    </div>
-
-                  </div>
+                <div class="ui visible sidebar inverted vertical menu">
+                  <a class="item" className="item">
+                    Dashboard
+                  </a>
+                  <a class="item" className="item">
+                    Interactive Tutorials
+                  </a>
+                  <a class="item" className="item">
+                    Help
+                  </a>
+                </div>
               </div>
 
-              <div class="one column row">
-                  <div class="column" id="box2">
-                    <p>nfkjadnwkbdq,mnsqkwd md </p>
+              <div class="twelve wide column" id="containerCol">
+                <div class="row" id="row1">
+                  <div class="column">
+                    <h1 id="dashboardHeader">Dashboard</h1>
                   </div>
+                </div>
+
+                <div class="row" id="row2">
+                  <div class="column">
+                    <div className="currentTut">
+                      <h3 id="currentTutHeader">My Current Tutorial:</h3>
+
+                      <div className="currentTutProg">
+                        <div class="ui progress">
+                          <div class="bar">
+                            <div class="progress">0%</div>
+                          </div>
+                        </div>
+
+                        <p id="contTutLink"><a href="#">Continue tutorial</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" id="row3">
+                  <div class="column">
+                    <div className="availTut">
+                      <h3 id="availTutHeader">Available Tutorials:</h3>
+
+                      <div class="column">
+                        <p id="availTutLink"><a href="#">Interactive Tutorial 1</a></p>
+                        <p id="availTutLink"><a href="#">Interactive Tutorial 2</a></p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </div>
           </div>
 
-        </div>
-
       </div>
+
+    );
+  }
+}
+
+
+// ========================================
+
+ReactDOM.render(
+<Dashboard />, document.getElementById('root')
+);

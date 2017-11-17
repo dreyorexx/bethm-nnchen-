@@ -4,7 +4,7 @@ import './dashboard.css';
 
 import { Sidebar, Grid, Progress } from 'semantic-ui-react';
 import $ from 'jquery';
-import { findDOMNode} from 'react-dom';
+import { findDOMNode } from 'react-dom';
 
 export default class Dashboard extends React.Component {
 
