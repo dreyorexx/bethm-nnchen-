@@ -12,7 +12,7 @@ export default class InteractiveTut extends React.Component {
       <Grid>
         <Grid.Row>
           <Grid.Column width={3}>
-            <div class="ui sidebar visible pointing vertical menu">
+            <div class="ui sidebar visible pointing inverted vertical menu" id="sidebar">
               <a class="item" id="tut1Header">Interactive Tutorial 1</a>
 
               <div class="item">
@@ -26,15 +26,18 @@ export default class InteractiveTut extends React.Component {
             </div>
           </Grid.Column>
 
-          <Grid.Column width={7} id="col2">
+          <Grid.Column width={12} className="col2">
             <p>Col2</p>
-            <p>line 1</p>
-            <p>line 2</p>
+
+            <Grid>
+              <Grid.Column width={8}>box left</Grid.Column>
+              <Grid.Column width={8}>box right</Grid.Column>
+            </Grid>
           </Grid.Column>
 
-          <Grid.Column width={6}>
-            <p>Col3</p>
+          <Grid.Column width={1}>
           </Grid.Column>
+
         </Grid.Row>
       </Grid>
 
