@@ -1,15 +1,6 @@
-#containerCol {
-  position: static;
-}
-
 #dashboardHeader {
   padding-top: 2%;
-  padding-bottom: 1%;
   font-family: Helvetica;
-}
-
-.currentTut {
-  padding-top: 2%;
 }
 
 #currentTutHeader {
@@ -30,4 +21,18 @@
   font-size: 1.2em;
   font-family: Helvetica;
   margin-bottom: 1%;
+}
+/*-------------------------------------*/
+
+#c2r1 {
+  background-color: grey;
+  padding-top: 1%;
+}
+
+#t {
+  background-color: pink;
+}
+
+#l {
+  background-color: blue;
 }

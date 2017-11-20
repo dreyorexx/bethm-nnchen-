@@ -3,42 +3,38 @@ import ReactDOM from 'react-dom';
 import { Icon, Grid } from 'semantic-ui-react';
 
 import './test.css';
+import $ from 'jquery';
 
 export default class Test extends React.Component {
+
+  constructor(){
+    super()
+    this.state={
+      show:true
+    }
+  }
+
+  operation(){
+    this.setState({
+    showMe:false
+    })
+  }
+
   render() {
     return (
 
-          <Grid>
-            <Grid.Row>
-              <Grid.Column width={3}>
-                <div class="ui sidebar visible pointing inverted vertical menu">
-                  <a class="item" id="tut1Header">Interactive Tutorial 1</a>
+        <div>
+          <h2>Test</h2>
+          {
+            this.state.showMe?
+            <div>
+              Hide Me
+            </div>
+            :null
+          }
 
-                  <div class="item">
-                    <div class="menu">
-                      <a class="item">Learning Objectives</a>
-                      <a class="item">Component 1</a>
-                      <a class="item">Component 2</a>
-                      <a class="item">Component 3</a>
-                    </div>
-                  </div>
-                </div>
-              </Grid.Column>
-
-              <Grid.Column width={12} className="col2">
-                <p>Col2</p>
-
-                <Grid>
-                  <Grid.Column width={8}>box left</Grid.Column>
-                  <Grid.Column width={8}>box right</Grid.Column>
-                </Grid>
-              </Grid.Column>
-
-              <Grid.Column width={1}>
-              </Grid.Column>
-
-            </Grid.Row>
-          </Grid>
+          <button onClick={()=>this.operation()}>Click Me</button>
+        </div>
 
     );
   }

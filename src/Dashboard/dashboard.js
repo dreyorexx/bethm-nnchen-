@@ -1,84 +1,75 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './dashboard.css';
 
-import { Sidebar, Grid, Progress } from 'semantic-ui-react';
+import { Sidebar, Grid, Progress, Icon } from 'semantic-ui-react';
 import $ from 'jquery';
 import { findDOMNode } from 'react-dom';
 
 export default class Dashboard extends React.Component {
 
-  handleToggle = () => {
-    const t = findDOMNode(this.refs.toggle);
-    $('.ui.sidebar').sidebar('toggle');
+  constructor(props){
+    super(props)
+    this.state={store:''}
+  }
+
+  componentDidMount=()=>{
+    $(".toggleBtn").click(function(){
+      $("#Sidebar").toggle();
+    });
   }
 
   render() {
     return (
 
-      <div>
-          <div class="ui grid container" id="grid">
-            <div class="row">
-              <div class="three wide column" id="sidebarCol">
-
-                <div class="ui visible sidebar inverted vertical menu">
-                  <a class="item" className="item">
-                    Dashboard
-                  </a>
-                  <a class="item" className="item">
-                    Interactive Tutorials
-                  </a>
-                  <a class="item" className="item">
-                    Help
-                  </a>
-                </div>
-              </div>
-
-              <div class="twelve wide column" id="containerCol">
-                <div class="row" id="row1">
-                  <div class="column">
-                    <h1 id="dashboardHeader">Dashboard</h1>
-                  </div>
-                </div>
-
-                <div class="row" id="row2">
-                  <div class="column">
-                    <div className="currentTut">
-                      <h3 id="currentTutHeader">My Current Tutorial:</h3>
-
-                      <div className="currentTutProg">
-                        <div class="ui progress">
-                          <div class="bar">
-                            <div class="progress">0%</div>
-                          </div>
-                        </div>
-
-                        <p id="contTutLink"><a href="#">Continue tutorial</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row" id="row3">
-                  <div class="column">
-                    <div className="availTut">
-                      <h3 id="availTutHeader">Available Tutorials:</h3>
-
-                      <div class="column">
-                        <p id="availTutLink"><a href="#">Interactive Tutorial 1</a></p>
-                        <p id="availTutLink"><a href="#">Interactive Tutorial 2</a></p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+      <Grid>
+        <Grid.Row>
+          <Grid.Column width={3}>
+            <div class="ui sidebar inverted vertical menu" id="Sidebar">
+              <a class="item" className="item">
+                Dashboard
+              </a>
+              <a class="item" className="item">
+                Interactive Tutorials
+              </a>
+              <a class="item" className="item">
+                Help
+              </a>
             </div>
-          </div>
+          </Grid.Column>
 
-      </div>
+          <Grid.Column width={13} id="t">
+            <h1 id="dashboardHeader">Dashboard</h1>
+            <button class="toggleBtn" onClick="this.handleToggle">sidebar</button>
 
+            <Grid>
+              <Grid.Row>
+                <Grid.Column width={14} id="c2r1">
+                  <h3>My Overall Score
+                    <i class="caret down icon" id="caretDownIcon"></i>
+                  </h3>
+
+                  <Grid.Column width={13}>
+                    <div class="ui progress">
+                      <div class="bar">
+                        <div class="progress">0%</div>
+                      </div>
+                    </div>
+                  </Grid.Column>
+
+                  <Grid.Column width={13}>
+
+                  </Grid.Column>
+
+                </Grid.Column>
+              </Grid.Row>
+
+            </Grid>
+
+          </Grid.Column>
+
+        </Grid.Row>
+      </Grid>
     );
   }
 }
