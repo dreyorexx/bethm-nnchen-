@@ -20,7 +20,7 @@ const FixedMenu = () => (
   </Menu>
 )
 
-export default class HomepageLayout extends Component {
+export default class DocumentationLayout extends Component {
   state = {}
 
   hideFixedMenu = () => this.setState({ visible: false })

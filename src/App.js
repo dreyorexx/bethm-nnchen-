@@ -7,6 +7,8 @@ import Header from './Header/header';
 import Home from './Home/home';
 import Tutorial from './Tutorial';
 import Documentation from './Documentation/doc';
+import Testing from './Testing/test';
+
 class App extends Component {
   constructor() {
     super();
@@ -23,6 +25,7 @@ class App extends Component {
               <Route exact path="/Header" component={Header} />
               <Route exact path="/Tutorial" component={Tutorial} />
               <Route exact path="/Doc" component={Documentation} />
+              <Route exact path="/Test" component={Testing} />
             </Switch>
           </div>
         </div>

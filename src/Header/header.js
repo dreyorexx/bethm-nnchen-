@@ -26,7 +26,7 @@ const options = [
   { key: 'hide', icon: 'hide', text: 'Hide Post', value: 'hide' },
 ]
 
-export default class HomepageLayout extends Component {
+export default class DashboardLayout extends Component {
   state = {}
 
   hideFixedMenu = () => this.setState({ visible: false })

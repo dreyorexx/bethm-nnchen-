@@ -4,9 +4,9 @@ import {Button, Container, Divider, Form,Input, TextArea, Grid, Header, Icon, Im
 const FixedMenu = () => (
   <Menu fixed='top' size='large'>
     <Container>
-      <Menu.Item as='a'>><a href="/Header">Dashboard</a></Menu.Item>
+      <Menu.Item as='a'><a href="/Header">Dashboard</a></Menu.Item>
       <Menu.Item as='a' active><a href="/Tutorial">Tutorial</a></Menu.Item>
-      <Menu.Item as='a'>><a href="/Doc">Documentation</a></Menu.Item>
+      <Menu.Item as='a'><a href="/Doc">Documentation</a></Menu.Item>
 
       <Menu.Menu position='right'>
           <Dropdown item text='Drey'>
@@ -20,7 +20,7 @@ const FixedMenu = () => (
   </Menu>
 )
 
-export default class HomepageLayout extends Component {
+export default class TutorialLayout extends Component {
   state = {}
 
   hideFixedMenu = () => this.setState({ visible: false })
@@ -72,6 +72,15 @@ export default class HomepageLayout extends Component {
                 </Container>
               </Segment>
             </Visibility>
+
+
+
+
+
+
+
+
+
 
                 <Segment inverted vertical style={{ padding: '5em 0em' }}>
                   <Container>
