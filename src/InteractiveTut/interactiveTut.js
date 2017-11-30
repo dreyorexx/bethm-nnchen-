@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './interactiveTut.css';
+import './InteractiveTut.css';
 
 import { Grid, Menu, Container } from 'semantic-ui-react';
 

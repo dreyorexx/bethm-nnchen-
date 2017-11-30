@@ -1,3 +1,60 @@
-.col2{
-  background-color: grey;
+#dashboardHeader {
+  padding-top: 2%;
+  font-family: Helvetica;
+}
+
+#currentTutHeader {
+  font-family: Helvetica;
+}
+
+#overallProgGrid {
+  padding-top: 1%;
+}
+
+#caretDownIcon {
+  float: right;
+  margin-right: 30%;
+}
+
+#overallScoreGrid {
+  padding-top: 1%;
+}
+
+#overallScoreHeader {
+  padding-top: 5%;
+  padding-left: 2%;
+}
+
+#overallProg {
+  padding-top: 3%;
+}
+
+#overallScore {
+  font-size: 18px;
+}
+
+#score {
+  font-size: 16px;
+}
+
+#indProgGrid {
+  margin-top: 0%;
+}
+
+#tutProgHeader {
+  padding-bottom: 1%;
+}
+
+#tutScoreHeader {
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+
+#tutScore {
+  padding-left: 3%;
+  margin-top: 3%;
+}
+
+#availTut1 {
+  margin-bottom: 0px;
 }

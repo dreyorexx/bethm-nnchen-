@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './dashboard.css';
+import './Temp.css';
 
 import { Sidebar, Grid, Progress } from 'semantic-ui-react';
 import $ from 'jquery';

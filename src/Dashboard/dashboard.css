@@ -7,32 +7,54 @@
   font-family: Helvetica;
 }
 
-#contTutLink {
-  float: right;
-  font-size: 1.2em;
-}
-
-#availTutHeader {
-  padding-top: 5%;
-  font-family: Helvetica;
-}
-
-#availTutLink {
-  font-size: 1.2em;
-  font-family: Helvetica;
-  margin-bottom: 1%;
-}
-/*-------------------------------------*/
-
-#c2r1 {
-  background-color: grey;
+#overallProgGrid {
   padding-top: 1%;
 }
 
-#t {
-  background-color: pink;
+#caretDownIcon {
+  float: right;
+  margin-right: 30%;
 }
 
-#l {
-  background-color: blue;
+#overallScoreGrid {
+  padding-top: 1%;
+}
+
+#overallScoreHeader {
+  padding-top: 5%;
+  padding-left: 2%;
+}
+
+#overallProg {
+  padding-top: 3%;
+}
+
+#overallScore {
+  font-size: 18px;
+}
+
+#score {
+  font-size: 16px;
+}
+
+#indProgGrid {
+  margin-top: 0%;
+}
+
+#tutProgHeader {
+  padding-bottom: 1%;
+}
+
+#tutScoreHeader {
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+
+#tutScore {
+  padding-left: 3%;
+  margin-top: 3%;
+}
+
+#availTut1 {
+  margin-bottom: 0px;
 }

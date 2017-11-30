@@ -3,14 +3,15 @@ import { BrowserRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
 
 import 'semantic-ui-css/semantic.min.css';
 
-
 import Header from './Header/header';
-import ContactTest from './ContactTest/contactTest';
-import ContactUs from './ContactUs/contact-us';
-import Dashboard from './Dashboard/dashboard';
-import Test from './Test/test';
-import InteractiveTut from './InteractiveTut/interactiveTut';
-
+import ContactTest from './ContactTest/ContactTest';
+import ContactUs from './ContactUs/Contact-us';
+import Dashboard from './Dashboard/Dashboard';
+import Test from './Test/Test';
+import InteractiveTut from './InteractiveTut/InteractiveTut';
+import AdminPanel from './AdminPanel/AdminPanel';
+import AdminPanelLogin from './AdminPanelLogin/AdminPanelLogin';
+import Inbox from './AdminPanel/Inbox';
 
 export default class App extends Component {
   constructor() {
@@ -25,11 +26,14 @@ export default class App extends Component {
           <div className="Contents">
             <Switch>
               <Route exact path="/" component={Header} />
-              <Route exact path="/contactTest" component={ContactTest} />
-              <Route exact path="/contact-us" component={ContactUs} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/test" component={Test} />
-              <Route exact path="/interactiveTut" component={InteractiveTut} />
+              <Route exact path="/ContactTest" component={ContactTest} />
+              <Route exact path="/Contact-us" component={ContactUs} />
+              <Route exact path="/Dashboard" component={Dashboard} />
+              <Route exact path="/Test" component={Test} />
+              <Route exact path="/InteractiveTut" component={InteractiveTut} />
+              <Route exact path="/AdminPanel" component={AdminPanel} />
+              <Route exact path="/AdminPanelLogin" component={AdminPanelLogin} />
+              <Route exact path="/Inbox" component={Inbox} />
             </Switch>
           </div>
         </div>

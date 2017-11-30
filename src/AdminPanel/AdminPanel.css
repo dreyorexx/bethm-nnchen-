@@ -1,0 +1,56 @@
+#composeBtn {
+  width:70%;
+  margin-left: 8%;
+}
+
+#adminPanelHeader {
+  padding-top: 2%;
+  font-family: Helvetica;
+}
+
+#search {
+  padding-top: 2%;
+}
+
+#searchGrid {
+  padding-top: 2%;
+}
+
+#composeModal {
+  position: absolute;
+}
+
+#composeHeader {
+  background-color: #ffffff;
+}
+
+#removeIcon {
+  float: right;
+  padding-right: 0%;
+}
+
+#recipient {
+  width: 100%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 8px;
+}
+
+#subject {
+  width: 100%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 8px;
+}
+
+#msg {
+  width: 100%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 8px;
+}
+
+#cancelBtn {
+  float: right;
+}
+
+#sendBtn {
+  float: left;
+}

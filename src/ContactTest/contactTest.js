@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './contactTest.css';
+import './ContactTest.css';
 import { Icon, Grid, Form } from 'semantic-ui-react';
 
 

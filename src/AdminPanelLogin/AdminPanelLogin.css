@@ -1,0 +1,78 @@
+#adminLoginGrid {
+  background-color: #212121;
+  min-height: 628px;
+
+}
+
+#adminHeader {
+  margin-top: 35%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: Gill Sans MT, sans-serif;
+  font-size: 2.5em;
+  color: #E0E0E0;
+}
+
+#loginBtn {
+  width: 100%;
+  background-color: #E0E0E0;
+  color: #37474F;
+  box-shadow: 3px 3px 1px #B0BEC5;
+  font-size: 1.1em;
+}
+
+.forgotPW {
+  padding-top: 3%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+#username {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 1px #CFD8DC;
+}
+
+#password {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 1px #CFD8DC;
+}
+
+#username::placeholder {
+  color: #37474F;
+}
+
+#password::placeholder {
+  color: #37474F;
+}
+
+#forgetPw {
+  color: #BBDEFB;
+}
+
+#removeIcon {
+  float: right;
+}
+
+#forgetPwModal {
+  width: 50%;
+  position: absolute;
+  left: 60%;
+  top: 30%;
+}
+
+#forgetPwSubHeader {
+  text-align: center;
+}
+
+#email {
+  width: 100%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 6px;
+}
+
+#forgetPwBtn {
+  width: 100%;
+  border-radius: 6px;
+  text-align: center;
+}
