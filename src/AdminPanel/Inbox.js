@@ -158,7 +158,7 @@ export default class AdminPanel extends React.Component {
                         <td width={4}>23/11/2017</td>
                         <td>Oreo Fluffy</td>
                         <td><a href="#">oreo@gmail.com</a></td>
-                        <td><a href="#">Enquiry on tutorial</a></td>
+                        <td>Enquiry on tutorial</td>
                         <td><a href="">Reply</a></td>
                       </tr>
                     </tbody>

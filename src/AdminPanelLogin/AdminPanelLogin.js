@@ -22,6 +22,7 @@ export default class AdminPanelLogin extends React.Component {
         $('#password').attr('type', 'password');
       }
     );
+
   }
 
   render() {

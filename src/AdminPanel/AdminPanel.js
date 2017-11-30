@@ -128,36 +128,29 @@ export default class AdminPanel extends React.Component {
 
             <Grid>
               <Grid.Row>
-                <Grid.Column width={8}>
-                  <Grid>
-                    <Grid.Row>
-                      <Grid.Column width={4}>
-                        <h4>Date</h4>
-                      </Grid.Column>
+                <Grid.Column width={15}>
+                  <table class="ui celled table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                      </tr>
+                    </thead>
 
-                      <Grid.Column width={4}>
-                        <h4>Name</h4>
-                      </Grid.Column>
+                    <tbody>
+                      <tr>
+                        <td width={4}>23/11/2017</td>
+                        <td>Oreo Fluffy</td>
+                        <td><a href="#">oreo@gmail.com</a></td>
+                        <td>Enquiry on tutorial</td>
+                        <td><a href="#">Click here to view</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                      <Grid.Column width={4}>
-                        <h4>Email</h4>
-                      </Grid.Column>
-
-                      <Grid.Column width={4}>
-                        <h4>Subject</h4>
-                      </Grid.Column>
-                    </Grid.Row>
-                  </Grid>
-                </Grid.Column>
-
-                <Grid.Column width={8}>
-                  <Grid>
-                    <Grid.Row>
-                      <Grid.Column width={16}>
-                        <h4>Contents</h4>
-                      </Grid.Column>
-                    </Grid.Row>
-                  </Grid>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
