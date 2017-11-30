@@ -6,7 +6,7 @@ const FixedMenu = () => (
     <Container>
       <Menu.Item as='a' active>Home</Menu.Item>
       <Menu.Item as='a'>News</Menu.Item>
-      <Menu.Item as='a'>Community Forum</Menu.Item>
+      <Menu.Item as='a'>Forum</Menu.Item>
       <Menu.Item as='a'>Documentation</Menu.Item>
 
       <Menu.Menu position='right'>
@@ -63,7 +63,7 @@ export default class HomepageLayout extends Component {
               <Menu inverted pointing secondary size='large'>
                 <Menu.Item as='a' active>Home</Menu.Item>
                 <Menu.Item as='a'>News</Menu.Item>
-                <Menu.Item as='a'>Community Forum</Menu.Item>
+                <Menu.Item as='a'>Forum</Menu.Item>
                 <Menu.Item as='a'>Documentation</Menu.Item>
 
                 <Menu.Item position='right'>
