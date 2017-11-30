@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Container, Dropdown, Grid } from 'semantic-ui-react'
+import { Menu, Segment, Container, Dropdown, Grid, List } from 'semantic-ui-react'
 
 export default class Objective extends Component {
   state = { activeItem: 'home' }
@@ -26,8 +26,8 @@ export default class Objective extends Component {
                       <Container>
                         <Menu inverted pointing secondary size='large'>
                           <Menu.Item as='a'><a href="/Header">Dashboard</a></Menu.Item>
-                          <Menu.Item as='a'><a href="/Tutorial">Tutorial</a></Menu.Item>
-                          <Menu.Item as='a' active><a href="/Doc">Documentation</a></Menu.Item>
+                          <Menu.Item as='a' active><a href="/Tutorial">Tutorial</a></Menu.Item>
+                          <Menu.Item as='a'><a href="/Doc">Documentation</a></Menu.Item>
 
                           <Menu.Menu position='right'>
                             <Dropdown item text='Drey'>
@@ -96,7 +96,30 @@ export default class Objective extends Component {
 
                       >
                         <Container>
-                          <object data="http://www.youtube.com/embed/W7qWa52k-nE" padding-left="600" width="560" height="315"></object>
+                          <Segment>
+                            <h2>Learning Objectives</h2>
+                            <Segment>
+                              <List divided relaxed>
+                                <List.Item>
+                                  <List.Content>
+                                    <List.Header>Understand SQL Injection</List.Header>
+                                    <List.Item as='li'>Part 1</List.Item>
+                                    <List.Item as='li'>Part 2</List.Item>
+                                  </List.Content>
+                                </List.Item>
+
+
+                                <List.Item>
+                                  <List.Content>
+                                    <List.Header>Execute SQL Injection</List.Header>
+                                    <List.Item as='li'>Part 1</List.Item>
+                                    <List.Item as='li'>Part 2</List.Item>
+                                  </List.Content>
+                                </List.Item>
+
+                              </List>
+                            </Segment>
+                          </Segment>
                         </Container>
 
                       </Segment>

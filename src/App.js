@@ -12,6 +12,11 @@ import Testing from './Testing/test';
 import Register from './Login/Register/register';
 import Login from './Login/Login/login';
 import Profile from './Login/Profile/profile';
+import learnObj from './inTut/learnObj/obj';
+
+
+
+
 
 /*
 import Question from './Components/question';
@@ -85,6 +90,7 @@ class App extends Component {
               <Route exact path="/Register" component={Register} />
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Profile" component={Profile} />
+              <Route exact path="/Obj" component={learnObj} />
             </Switch>
           </div>
 
