@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Container, Dropdown, Grid } from 'semantic-ui-react'
+import { Menu, Segment, Container, Dropdown, Grid, Button } from 'semantic-ui-react'
 
 export default class Video extends Component {
   state = { activeItem: 'home' }
@@ -92,11 +92,30 @@ export default class Video extends Component {
                     <Segment
                       textAlign='left'
                       style={{ minHeight: 70, padding:"10em, 50em, 100em, 30em", backgroundColor: 'black' }}
-
-
                       >
+
                         <Container>
-                          <object data="http://www.youtube.com/embed/W7qWa52k-nE" padding-left="600" width="560" height="315"></object>
+                          <Segment
+                            style={{ color: 'black', backgroundColor: 'white', paddingtop: 0 }}
+                            >
+                          <h2>Lecture</h2>
+                          
+                          <Grid.Row>
+                          <object data="https://www.youtube-nocookie.com/embed/1S0aBV-Waeo" padding-left="600" width="560" height="315"></object>
+                          </Grid.Row>
+                          </Segment>
+
+                          <Grid.Row>
+                            <Grid.Column width={2}>
+                              <Button content='Learning Objectives' icon='left arrow' labelPosition='left' />
+                            </Grid.Column>
+
+                            <Grid.Column width={7}></Grid.Column>
+
+                            <Grid.Column width={2}>
+                              <Button content='Take The Quiz' icon='right arrow' labelPosition='right' />
+                            </Grid.Column>
+                          </Grid.Row>
                         </Container>
 
                       </Segment>

@@ -73,15 +73,6 @@ export default class TutorialLayout extends Component {
               </Segment>
             </Visibility>
 
-
-
-
-
-
-
-
-
-
                 <Segment inverted vertical style={{ padding: '5em 0em' }}>
                   <Container>
                     <Grid divided inverted stackable>

@@ -13,8 +13,7 @@ import Register from './Login/Register/register';
 import Login from './Login/Login/login';
 import Profile from './Login/Profile/profile';
 import learnObj from './inTut/learnObj/obj';
-
-
+import Video from './inTut/comp1/video/video';
 
 
 
@@ -91,6 +90,7 @@ class App extends Component {
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Profile" component={Profile} />
               <Route exact path="/Obj" component={learnObj} />
+              <Route exact path="/Video" component={Video} />
             </Switch>
           </div>
 
