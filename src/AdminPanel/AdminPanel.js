@@ -16,7 +16,7 @@ export default class AdminPanel extends React.Component {
       $('#composeModal').show();
     });
 
-    $('#removeIcon').click(function(){
+    $('#closeComposeModal').click(function(){
       $('#composeModal').hide();
     })
   }
@@ -53,7 +53,7 @@ export default class AdminPanel extends React.Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column width={11}>
-                  <h1 id="adminPanelHeader">Admin Panel</h1>
+                  <h1 id="adminPanelHeader">Unread Messages</h1>
                 </Grid.Column>
 
                 <Grid.Column width={3} id="searchGrid">
@@ -71,7 +71,7 @@ export default class AdminPanel extends React.Component {
 
             <div class="ui modal" id="composeModal">
               <div class="header"><i class="write icon"></i>Compose
-                <i class="remove icon" id="removeIcon"></i>
+                <i class="remove icon" id="closeComposeModal"></i>
               </div>
 
               <div class="content" id="modalContent">
@@ -143,10 +143,10 @@ export default class AdminPanel extends React.Component {
                     <tbody>
                       <tr>
                         <td width={4}>23/11/2017</td>
-                        <td>Oreo Fluffy</td>
-                        <td><a href="#">oreo@gmail.com</a></td>
-                        <td>Enquiry on tutorial</td>
-                        <td><a href="#">Click here to view</a></td>
+                        <td id="senderName">Oreo Fluffy</td>
+                        <td id="senderEmail"><a href="#">oreo@gmail.com</a></td>
+                        <td id="emailSubject">Enquiry on tutorial</td>
+                        <td id="senderMsg"><a href="#">Click here to view</a></td>
                       </tr>
                     </tbody>
                   </table>

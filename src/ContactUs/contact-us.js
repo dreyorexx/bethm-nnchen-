@@ -44,6 +44,13 @@ export default class ContactUs extends React.Component {
                                 </div>
                               </div>
 
+                              <div class="field" id="subjectField">
+                                <div class="ui left icon input">
+                                  <input type="text" placeholder="Subject" required id="subjectInput" />
+                                  <i class="write icon"></i>
+                                </div>
+                              </div>
+
                               <div class="field" id="msgField">
                                 <textarea placeholder="Message" id="msgInput" />
                               </div>

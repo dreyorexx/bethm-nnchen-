@@ -16,10 +16,26 @@ export default class AdminPanel extends React.Component {
       $('#composeModal').show();
     });
 
-    $('#removeIcon').click(function(){
+    $('#closeComposeModal').click(function(){
       $('#composeModal').hide();
     });
 
+    $('#msgLink').click(function(){
+      $('#msgModal').show();
+    });
+
+    $('#replyMailIcon').click(function(){
+      $('#replyMailModal').show();
+      $('#msgModal').hide();
+    });
+
+    $('#closeMsgIcon').click(function(){
+        $('#msgModal').hide();
+    });
+
+    $('#closeReplyMsgIcon').click(function(){
+        $('#replyMailModal').hide();
+    })
   }
 
   render() {
@@ -72,7 +88,7 @@ export default class AdminPanel extends React.Component {
 
             <div class="ui modal" id="composeModal">
               <div class="header"><i class="write icon"></i>Compose
-                <i class="remove icon" id="removeIcon"></i>
+                <i class="remove icon" id="closeComposeModal"></i>
               </div>
 
               <div class="content" id="modalContent">
@@ -159,7 +175,7 @@ export default class AdminPanel extends React.Component {
                         <td>Oreo Fluffy</td>
                         <td><a href="#">oreo@gmail.com</a></td>
                         <td>Enquiry on tutorial</td>
-                        <td><a href="">Reply</a></td>
+                        <td><a href="#" id="msgLink">Reply</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -167,6 +183,67 @@ export default class AdminPanel extends React.Component {
                 </Grid.Column>
               </Grid.Row>
             </Grid>
+
+            <div class="ui modal" id="msgModal">
+              <div class="header" id="msgHeader">
+
+                <i class="remove icon" id="closeMsgIcon"></i>
+                <i class="reply icon" id="replyMailIcon"></i>
+
+                <p id="timeDateTag"><span id="emailDate">06-Dec-17</span> <span id="emailTime">10.50pm</span></p>
+
+                <div id="senderEmailCon">
+                  <text id="senderEmailHeader">To: <a href="#" id="senderEmail">fluffyOreo@gmail.com</a></text>
+                </div>
+
+                <div id="adminEmailCon">
+                  <text id="adminEmailHeader">From: <a href="#" id="adminEmail">admin@strat.com</a></text>
+                </div>
+
+                <text class="emailSub">Enquiry on Tutorial</text>
+              </div>
+
+              <div class="content" id="msgModalContent">
+                <Grid>
+                  <Grid.Row>
+                    <Grid.Column width={16}>
+                      <p>Hi, I would like to know if there will be more topics covered for Tutorial 1?
+                        <br/> Would love to hear from you soon.
+                        <br/> P.s. The tutorials are very informative :)
+                      </p>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </div>
+            </div>
+
+            <div class="ui modal" id="replyMailModal">
+              <div class="header" id="replyHeader">
+
+                <i class="remove icon" id="closeReplyMsgIcon"></i>
+
+                <div id="senderEmailCon">
+                  <text id="senderEmailHeader">To: <a href="#" id="senderEmail">fluffyOreo@gmail.com</a></text>
+                </div>
+
+                <div id="adminEmailCon">
+                  <text id="adminEmailHeader">From: <a href="#" id="adminEmail">admin@strat.com</a></text>
+                </div>
+
+                <div class="emailSub">
+                  <text id="replyHeader">Re: <text id="emailSub">Enquiry on Tutorial</text></text>
+                </div>
+              </div>
+
+              <div class="content" id="replyModalContent">
+                <div id="msgEditor">
+                  <textarea rows="10" cols="8" id="msgBox"></textarea>
+                </div>
+
+                <button class="ui button" type="submit" id="sendReplyBtn">Send</button>
+
+              </div>
+            </div>
 
           </Grid.Column>
         </Grid.Row>

@@ -30,7 +30,7 @@
   background-color: #ffffff;
 }
 
-#removeIcon {
+#closeComposeModal {
   float: right;
   padding-right: 0%;
 }
@@ -59,4 +59,66 @@
 
 #sendBtn {
   float: left;
+}
+
+#msgModal {
+  position: absolute;
+}
+
+#replyMailIcon {
+  float: right;
+  padding-right: 5%;
+}
+
+#closeMsgIcon {
+  float: right;
+  padding-right: 0%;
+}
+
+#closeReplyMsgIcon {
+  float: right;
+  padding-right: 0%;
+}
+
+#timeDateTag {
+  font-size: 0.7em;
+  font-weight: normal;
+  float: right;
+  padding-right: 3%;
+}
+
+#replyMailModal {
+  position: absolute;
+}
+
+#replyMailTopic {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#senderEmailCon {
+  font-size: 0.8em;
+}
+
+#adminEmailCon {
+  font-size: 0.8em;
+  padding-bottom: 1%;
+}
+
+.emailSub {
+  font-size: 0.9em;
+}
+
+#msgBox {
+  width: 100%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 8px;
+  resize: none;
+}
+
+#sendReplyBtn {
+  float: right;
+  margin-top: 1%;
+  margin-bottom: 2%;
 }

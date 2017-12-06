@@ -56,6 +56,10 @@
   color: #dddddd;
 }
 
+#writeIcon {
+  color: #dddddd;
+}
+
 #emailLink {
   color: #ffffff;
 }
@@ -67,10 +71,20 @@
 
 #nameField {
   width: 90%;
+  padding-left: 22%;
+  margin-bottom: 1%;
 }
 
 #emailField {
   width: 90%;
+  padding-left: 22%;
+  margin-bottom: 1%;
+}
+
+#subjectField {
+  width: 90%;
+  padding-left: 22%;
+  margin-bottom: 3%;
 }
 
 #msgInput {

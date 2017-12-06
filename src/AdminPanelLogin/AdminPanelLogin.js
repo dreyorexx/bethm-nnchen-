@@ -23,6 +23,12 @@ export default class AdminPanelLogin extends React.Component {
       }
     );
 
+    //login btn
+    $('#loginBtn').click(function(){
+      window.location.href='/AdminPanel';
+      return false;
+    });
+
   }
 
   render() {
