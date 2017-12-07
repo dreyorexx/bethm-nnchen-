@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './Inbox.css';
+import './SentMail.css';
 
 import { Grid, Menu, Button, Icon, Modal, Dimmer, Input, Checkbox, Item } from 'semantic-ui-react';
 import $ from 'jquery';
@@ -9,7 +9,7 @@ import { findDOMNode } from 'react-dom';
 
 import '../AdminPanelLogin/AdminPanelLogin';
 
-export default class AdminPanel extends React.Component {
+export default class SentMail extends React.Component {
 
   componentDidMount=()=>{
     $('#composeBtn').click(function(){
@@ -37,7 +37,6 @@ export default class AdminPanel extends React.Component {
         $('#msgModal').hide();
         $('#replyMailModal').hide();
     });
-
   }
 
   render() {
@@ -55,11 +54,11 @@ export default class AdminPanel extends React.Component {
               </div>
 
               <div>
-                <a class="item" className="item" href="/Inbox"><h4>Inbox</h4></a>
+                <a class="item" className="item" href="/Inbox">Inbox</a>
               </div>
 
               <div>
-                <a class="item" className="item" href="/SentMail">Sent Mail</a>
+                <a class="item" className="item" href="/SentMail"><h4>Sent Mail</h4></a>
               </div>
 
               <div>
@@ -72,7 +71,7 @@ export default class AdminPanel extends React.Component {
             <Grid>
               <Grid.Row>
                 <Grid.Column width={11}>
-                  <h1 id="inboxHeader">Inbox</h1>
+                  <h1 id="sentMailHeader">Sent Mail</h1>
                 </Grid.Column>
 
                 <Grid.Column width={3} id="searchGrid">
@@ -367,5 +366,5 @@ export default class AdminPanel extends React.Component {
 }
 
 ReactDOM.render(
-<AdminPanel />, document.getElementById('root')
+<SentMail />, document.getElementById('root')
 );

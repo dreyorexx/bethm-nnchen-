@@ -1,4 +1,4 @@
-#inboxHeader {
+#sentMailHeader {
   padding-top: 2%;
   font-family: Helvetica;
 }
@@ -97,13 +97,17 @@
   border-right: none;
 }
 
-.senderEmailCon {
+#senderEmailCon {
   font-size: 0.8em;
 }
 
-.adminEmailCon {
+#adminEmailCon {
   font-size: 0.8em;
-  padding-bottom: 0%;
+  padding-bottom: 1%;
+}
+
+.emailSub {
+  font-size: 0.9em;
 }
 
 #msgBox {
@@ -117,36 +121,4 @@
   float: right;
   margin-top: 1%;
   margin-bottom: 2%;
-}
-
-#senderEmailConRow {
-  padding-bottom: 0;
-}
-
-#adminEmailConRow {
-  padding-top: 0;
-}
-
-#emailSubConRow {
-  padding-top: 0;
-}
-
-#senderEmailConRow2 {
-  padding-bottom: 0;
-}
-
-#adminEmailConRow2 {
-  padding-top: 0;
-}
-
-#emailSubConRow2 {
-  padding-top: 0;
-}
-
-.emailSubHeader {
-  font-size: 0.8em;
-}
-
-#emailSub {
-  font-size: 0.9em;
 }

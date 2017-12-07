@@ -12,6 +12,7 @@ import InteractiveTut from './InteractiveTut/InteractiveTut';
 import AdminPanel from './AdminPanel/AdminPanel';
 import AdminPanelLogin from './AdminPanelLogin/AdminPanelLogin';
 import Inbox from './AdminPanel/Inbox';
+import SentMail from './AdminPanel/SentMail';
 
 export default class App extends Component {
   constructor() {
@@ -34,6 +35,7 @@ export default class App extends Component {
               <Route exact path="/AdminPanel" component={AdminPanel} />
               <Route exact path="/AdminPanelLogin" component={AdminPanelLogin} />
               <Route exact path="/Inbox" component={Inbox} />
+              <Route exact path="/SentMail" component={SentMail} />
             </Switch>
           </div>
         </div>
