@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Container, Dropdown, Grid, Button, Icon } from 'semantic-ui-react'
+import { Header, List, Menu, Segment, Container, Dropdown, Grid, Button, Icon } from 'semantic-ui-react'
 
 export default class Video extends Component {
   state = { activeItem: 'home' }
@@ -13,7 +13,7 @@ export default class Video extends Component {
       <div>
 
         <Segment
-          style={{ backgroundColor: 'black'}}
+          style={{ backgroundColor: '#2e2f30'}}
           >
             <Grid>
               <Grid.Row>
@@ -24,7 +24,7 @@ export default class Video extends Component {
                     vertical
                     >
                       <Container>
-                        <Menu inverted fixed="top">
+                        <Menu inverted fixed='top'>
                           <Menu.Item as='a'><a href="/Header">Dashboard</a></Menu.Item>
                           <Menu.Item as='a' active><a href="/Tutorial">Tutorial</a></Menu.Item>
                           <Menu.Item as='a'><a href="/Doc">Documentation</a></Menu.Item>
@@ -43,27 +43,22 @@ export default class Video extends Component {
                   </Grid.Column>
                 </Grid.Row>
 
-
-
-
-
                 <Grid.Row>
 
                   <Grid.Column width={4}>
                     <Segment
 
-                      style={{maxMargin: 60, backgroundColor: 'black', paddingLeft: 70}}
+                      style={{maxMargin: 60, backgroundColor: '#2e2f30', paddingLeft: 70}}
 
                       >
                         <Menu pointing vertical>
-                          <Menu.Item as='a' ><a href="/Header">Learning Objectives</a>
-
+                          <Menu.Item as='a' ><a href="/Obj">Learning Objectives</a>
                         </Menu.Item>
 
                         <Menu.Item>
                           <Menu.Header>Component 1</Menu.Header>
                           <Menu.Menu>
-                            <Menu.Item name='Video' active={activeItem === 'video1'} onClick={this.handleItemClick} active />
+                            <Menu.Item name='Video' active={activeItem === 'video1'} onClick={this.handleItemClick} active><a href="/video">Video</a></Menu.Item>
                             <Menu.Item name='Quiz' active={activeItem === 'quiz1'} onClick={this.handleItemClick} />
                           </Menu.Menu>
                         </Menu.Item>
@@ -91,46 +86,56 @@ export default class Video extends Component {
                   <Grid.Column width={11}>
                     <Segment
                       textAlign='left'
-                      style={{ minHeight: 70,  backgroundColor: 'black', marginTop: -20 }}
+                      style={{ minHeight: 70,  backgroundColor: '#2e2f30', marginTop: -20 }}
                       >
 
                         <Container>
                           <Segment
-                            style={{ color: 'white', backgroundColor: 'black' }}
+                            style={{ color: 'white', backgroundColor: '#2e2f30' }}
                             >
                           <Grid.Row>
                           <h2 >Lecture </h2>
-
-
-
                           </Grid.Row>
 
-
                           <Grid.Row>
-                          <object data="https://www.youtube-nocookie.com/embed/1S0aBV-Waeo" padding-left="600" width="800" height="400"></object>
+                          <object data="https://www.youtube-nocookie.com/embed/1S0aBV-Waeo" padding-left="600" width="790" height="400"></object>
                           </Grid.Row>
                           </Segment>
 
                           <Grid.Row>
-
-                              <Button content='Learning Objectives' icon='left arrow' size='small' labelPosition='left' />
-                              <Button style ={{marginLeft:"10em"}} size='small' color='yellow'><Icon name='lightbulb'/>Turn on light</Button>
-
-
-
-                              <Button style={{float: "right"}} size='small' content='Take The Quiz' icon='right arrow' labelPosition='right' />
-
+                              <Button style ={{marginLeft:"1em"}} content='Learning Objectives' icon='left arrow' size='small' labelPosition='left' />
+                              <Button style ={{marginLeft:"10em"}} size='small' color='yellow'><Icon name='lightbulb'/>Turn off Light</Button>
+                              <Button style={{float: "right", marginLeft:"10em"}} size='small' content='Take The Quiz' icon='right arrow' labelPosition='right' />
                           </Grid.Row>
                         </Container>
-
                       </Segment>
                     </Grid.Column>
                   </Grid.Row>
-
-
                 </Grid>
-              </Segment>
 
+
+              <Segment inverted vertical style={{ padding: '5em 0em', backgroundColor:'#2e2f30'  }}>
+                <Container>
+                  <Grid divided inverted stackable>
+                    <Grid.Row>
+                      <Grid.Column width={3}>
+                        <Header inverted as='h4' content='About' />
+                        <List link inverted>
+                          <List.Item as='a'>Contact Us</List.Item>
+                        </List>
+                      </Grid.Column>
+                      <Grid.Column width={3}>
+                        <Header inverted as='h4' content='Services' />
+                        <List link inverted>
+                          <List.Item as='a'>Contact Us</List.Item>
+                          <List.Item as='a'>FAQ</List.Item>
+                        </List>
+                      </Grid.Column>
+                    </Grid.Row>
+                  </Grid>
+                </Container>
+              </Segment>
+</Segment>
             </div>
           )
         }
