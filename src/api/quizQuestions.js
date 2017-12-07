@@ -1,87 +1,53 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "What are .NET assemblies that require the Common Language Runtime (CLR) in order to be executed?",
       answers: [
           {
-              type: "Microsoft",
-              content: "Halo"
+              type: "correct",
+              content: "Managed Codes"
           },
           {
-              type: "Nintendo",
-              content: "Pokemon"
+              type: "wrong",
+              content: "Binaries"
           },
           {
-              type: "Sony",
-              content: "Uncharted"
+              type: "wrong",
+              content: "Executables"
           }
       ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
+      question: "Code Access Security (CAS) is able to:",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box"
+              type: "correct",
+              content: "Restrict the activities of particular software component."
           },
           {
-              type: "Nintendo",
-              content: "Nintendo 64"
+              type: "wrong",
+              content: "Authenticate the user using a standard mechanism."
           },
           {
-              type: "Sony",
-              content: "Playstation 1"
+              type: "wrong",
+              content: "Associate certificates to the user’s identity."
           }
       ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
+      question: "Which of the following regarding stack walk is NOT true?",
       answers: [
-          {
-              type: "Microsoft",
-              content: "Forza"
-          },
-          {
-              type: "Nintendo",
-              content: "Mario Kart"
-          },
-          {
-              type: "Sony",
-              content: "Gran Turismo"
-          }
-      ]
-  },
-  {
-      question: "Which of these games do you think is best?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "BioShock"
-          },
-          {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
-          },
-          {
-              type: "Sony",
-              content: "Final Fantasy VII"
-          }
-      ]
-  },
-  {
-      question: "What console would you prefer to own?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "X-Box One"
-          },
-          {
-              type: "Nintendo",
-              content: "Wii U"
-          },
-          {
-              type: "Sony",
-              content: "Playstation 4"
-          }
+        {
+            type: "correct",
+            content: "Stack walk are initiated when a permission is denied."
+        },
+        {
+            type: "wrong",
+            content: "Stack walk is used to ensure that whoever invokes an operation has the necessary permission."
+        },
+        {
+            type: "wrong",
+            content: "Associate certificates to the user’s identity."
+        }
       ]
   }
 ];

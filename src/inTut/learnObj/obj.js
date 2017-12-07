@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Container, Dropdown, Grid, List } from 'semantic-ui-react'
+import { Header, Menu, Segment, Container, Dropdown, Grid, List } from 'semantic-ui-react'
 
 export default class Objective extends Component {
   state = { activeItem: 'home' }
@@ -10,7 +10,7 @@ export default class Objective extends Component {
     const { activeItem } = this.state
 
     return (
-      <div>
+      <div >
 
         <Segment
           style={{ backgroundColor: 'black'}}
@@ -63,7 +63,7 @@ export default class Objective extends Component {
                         <Menu.Item>
                           <Menu.Header>Component 1</Menu.Header>
                           <Menu.Menu>
-                            <Menu.Item name='Video' active={activeItem === 'video1'} onClick={this.handleItemClick} />
+                            <Menu.Item name='Video' active={activeItem === 'video1'} onClick={this.handleItemClick}><a href="/video">Video</a></Menu.Item>
                             <Menu.Item name='Quiz' active={activeItem === 'quiz1'} onClick={this.handleItemClick} />
                           </Menu.Menu>
                         </Menu.Item>
@@ -128,8 +128,29 @@ export default class Objective extends Component {
 
 
                 </Grid>
-              </Segment>
 
+              <Segment vertical style={{ padding: '5em 0em', backgroundColor:'black' }}>
+                <Container>
+                  <Grid divided inverted stackable>
+                    <Grid.Row>
+                      <Grid.Column width={3}>
+                        <Header inverted as='h4' content='About' />
+                        <List link inverted>
+                          <List.Item as='a'>Contact Us</List.Item>
+                        </List>
+                      </Grid.Column>
+                      <Grid.Column width={3}>
+                        <Header inverted as='h4' content='Services' />
+                        <List link inverted>
+                          <List.Item as='a'>Contact Us</List.Item>
+                          <List.Item as='a'>FAQ</List.Item>
+                        </List>
+                      </Grid.Column>
+                    </Grid.Row>
+                  </Grid>
+                </Container>
+              </Segment>
+              </Segment>
             </div>
           )
         }
