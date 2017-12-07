@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Container, Dropdown, Grid, Button } from 'semantic-ui-react'
+import { Menu, Segment, Container, Dropdown, Grid, Button, Icon } from 'semantic-ui-react'
 
 export default class Video extends Component {
   state = { activeItem: 'home' }
@@ -20,11 +20,11 @@ export default class Video extends Component {
                 <Grid.Column width={16}>
                   <Segment
                     textAlign='center'
-                    style={{ maxHeight: 80, backgroundColor: 'black' }}
+                    style={{ maxHeight: 70, backgroundColor: 'black' }}
                     vertical
                     >
                       <Container>
-                        <Menu inverted pointing secondary size='large'>
+                        <Menu inverted fixed="top">
                           <Menu.Item as='a'><a href="/Header">Dashboard</a></Menu.Item>
                           <Menu.Item as='a' active><a href="/Tutorial">Tutorial</a></Menu.Item>
                           <Menu.Item as='a'><a href="/Doc">Documentation</a></Menu.Item>
@@ -91,30 +91,35 @@ export default class Video extends Component {
                   <Grid.Column width={11}>
                     <Segment
                       textAlign='left'
-                      style={{ minHeight: 70, padding:"10em, 50em, 100em, 30em", backgroundColor: 'black' }}
+                      style={{ minHeight: 70,  backgroundColor: 'black', marginTop: -20 }}
                       >
 
                         <Container>
                           <Segment
-                            style={{ color: 'black', backgroundColor: 'white', paddingtop: 0 }}
+                            style={{ color: 'white', backgroundColor: 'black' }}
                             >
-                          <h2>Lecture</h2>
-                          
                           <Grid.Row>
-                          <object data="https://www.youtube-nocookie.com/embed/1S0aBV-Waeo" padding-left="600" width="560" height="315"></object>
+                          <h2 >Lecture </h2>
+
+
+
+                          </Grid.Row>
+
+
+                          <Grid.Row>
+                          <object data="https://www.youtube-nocookie.com/embed/1S0aBV-Waeo" padding-left="600" width="800" height="400"></object>
                           </Grid.Row>
                           </Segment>
 
                           <Grid.Row>
-                            <Grid.Column width={2}>
-                              <Button content='Learning Objectives' icon='left arrow' labelPosition='left' />
-                            </Grid.Column>
 
-                            <Grid.Column width={7}></Grid.Column>
+                              <Button content='Learning Objectives' icon='left arrow' size='small' labelPosition='left' />
+                              <Button style ={{marginLeft:"10em"}} size='small' color='yellow'><Icon name='lightbulb'/>Turn on light</Button>
 
-                            <Grid.Column width={2}>
-                              <Button content='Take The Quiz' icon='right arrow' labelPosition='right' />
-                            </Grid.Column>
+
+
+                              <Button style={{float: "right"}} size='small' content='Take The Quiz' icon='right arrow' labelPosition='right' />
+
                           </Grid.Row>
                         </Container>
 
