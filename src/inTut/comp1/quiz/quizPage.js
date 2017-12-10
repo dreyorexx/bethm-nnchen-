@@ -4,7 +4,7 @@ import quizQuestions from '../../../api/quizQuestions';
 import Quiz from '../../../Components/quiz';
 import Result from '../../../Components/Result';
 import { Header, List, Menu, Segment, Container, Dropdown, Grid, Button, Icon } from 'semantic-ui-react'
-import quizStyle from './quizStyle';
+// import quizStyle from './quizStyle';
 
 
 class quizPage extends Component {
@@ -132,7 +132,7 @@ class quizPage extends Component {
     return (
       <Segment
         style={{
-          backgroundColor: '#2e2f30'        
+          backgroundColor: '#2e2f30'
 
         }}
         >
@@ -228,8 +228,11 @@ class quizPage extends Component {
                 </Segment>
               </Grid.Column>
             </Grid.Row>
-    </Grid>
-  </Segment>
+
+
+        
+      </Grid>
+    </Segment>
     );
   }
 

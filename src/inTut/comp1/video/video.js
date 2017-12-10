@@ -59,7 +59,7 @@ export default class Video extends Component {
                           <Menu.Header>Component 1</Menu.Header>
                           <Menu.Menu>
                             <Menu.Item name='Video' active={activeItem === 'video1'} onClick={this.handleItemClick} active><a href="/video">Video</a></Menu.Item>
-                            <Menu.Item name='Quiz' active={activeItem === 'quiz1'} onClick={this.handleItemClick} />
+                            <Menu.Item name='Quiz' active={activeItem === 'quiz1'} onClick={this.handleItemClick}><a href="/quiz">Quiz</a></Menu.Item>
                           </Menu.Menu>
                         </Menu.Item>
 
