@@ -1,0 +1,16 @@
+#adminHeader {
+  text-align: center;
+}
+
+.hr {
+  width: 50%;
+}
+
+#adminLoginRow {
+  margin-left: 25%;
+}
+
+#forgetPw {
+  margin-left: 2.5%;
+  text-align: center;
+}

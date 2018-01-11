@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://bootswatch.com/3/sandstone/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../style/home.css">
+    <link rel="icon" href="../../images/StratLogo.png"/>
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!--Default navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#strat-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../home/home.html"><img src="../../images/StratLogo.png" alt="logo" class="img-responsive" width="45" height="45" id="logo"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="strat-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Body content-->
+    <div class="container-large body-content">
+      <div class="row-section jumbotron" id="first-section">
+          <h1>WELCOME TO STRAT</h1>
+          <h3>Interested to learn?</h3>
+          <a href="#"><button type="button" name="button" class="btn btn-default btn-md" id="startedBtn">Get Started
+          <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left: 5px;"></span></button></a>
+      </div>
+
+      <div class="row-section" id="second-section">
+        <fieldset>
+					<legend><a href="#" id="second-about">About Us</a></legend>
+						<div class="panel-body" id="information">
+							<h3><strong>Who Are We?</strong></h3>
+              <h5>This is what they say about us.</h5>
+						</div>
+						<div class="panel-body" id="contacting">
+							<h3><strong>Talk to Us!</strong></h3>
+              <h5>Got burning questions? Drop us questions!</h5>
+              <a href="#"><button type="button" name="button" class="btn btn-default btn-xs" id="msgBtn" style="margin: 5px 8px;">
+              <span class="glyphicon glyphicon-send" aria-hidden="true" style="margin-right: 5px;"></span>Message Us</button></a>
+						</div>
+				</fieldset>
+      </div>
+
+      <div class="container-small">
+        <footer class="footer-bs">
+          <div class="row">
+            <div class="col-md-2 footer-nav" id="footer-admin">
+               <ul class="list">
+                 <h6>Administrator</h6>
+                  <li><a href="../adminLogin/adminLogin.html">Log In</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 footer-nav">
+               <ul class="list">
+                 <h6>Service</h6>
+                  <li><a href="../contactUs/contactUs.html">Contact Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+          </div>
+          <section align="right" >&copy; 2018 Strat</section>
+        </footer>
+      </div>
+    </div>
+
+
+  </body>
+</html>

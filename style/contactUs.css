@@ -1,0 +1,54 @@
+#subHeader {
+  color: #424242;
+  text-align: center;
+}
+
+#emailHeader {
+  text-align: center;
+}
+
+#msgField {
+  resize: none;
+}
+
+#contactInfoHeader {
+  text-align: center;
+}
+
+#phoneNoRow {
+  text-align: center;
+  padding-top: 2%;
+}
+
+#phoneNo {
+  font-size: 1.2em;
+  padding-left: 10%;
+}
+
+#emailAddrRow {
+  text-align: center;
+  padding-top: 2%;
+}
+
+#emailAddr {
+  font-size: 1.2em;
+  padding-left: 10%;
+}
+
+input:invalid {
+  box-shadow: 0 0 1px 1px orange;
+}
+
+input:valid {
+  box-shadow: 0 0 1px 1px #81C784;
+  border: 0.5px solid #81C784;
+}
+
+textarea:invalid {
+  box-shadow: 0 0 1px 1px orange;
+}
+
+textarea:valid {
+  box-shadow: 0 0 1px 1px #81C784;
+  border: 0.5px solid #81C784;
+}

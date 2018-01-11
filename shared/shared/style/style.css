@@ -1,0 +1,9 @@
+/*shared css for layout*/
+body {
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#logo{
+  margin-top: -10px;
+}
