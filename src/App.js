@@ -9,12 +9,14 @@ import Home from './Home/home';
 import Tutorial from './Tutorial';
 import Documentation from './Documentation/doc';
 import Testing from './Testing/test';
+import testMan from './Testing/testMan';
 import Register from './Login/Register/register';
 import Login from './Login/Login/login';
 import Profile from './Login/Profile/profile';
 import learnObj from './inTut/learnObj/obj';
 import Video from './inTut/comp1/video/video';
 import Quiz from './inTut/comp1/quiz/quizPage';
+import quizMan from './quizMan/quizMan';
 
 
 /*
@@ -44,12 +46,14 @@ class App extends Component {
               <Route exact path="/Tutorial" component={Tutorial} />
               <Route exact path="/Doc" component={Documentation} />
               <Route exact path="/Test" component={Testing} />
+              <Route exact path="/testMan" component={testMan} />
               <Route exact path="/Register" component={Register} />
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Profile" component={Profile} />
               <Route exact path="/Obj" component={learnObj} />
               <Route exact path="/Video" component={Video} />
               <Route exact path="/Quiz" component={Quiz} />
+              <Route exact path="/QuizManager" component={quizMan} />
 
             </Switch>
           </div>
